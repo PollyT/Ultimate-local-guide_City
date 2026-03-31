@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import url('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body {
+  @apply bg-[#F5F7FA] text-[#333333] antialiased;
+}
+
+::selection {
+  @apply bg-[#0066FF]/20 text-[#0066FF];
+}
